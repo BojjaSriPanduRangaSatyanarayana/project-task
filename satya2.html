@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="events.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>College Events</h1>
+        <nav>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="events" class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-filter">
+                <label for="event-search">Search Events:</label>
+                <input type="text" id="event-search" placeholder="Search by event Name...">
+            </div>
+            <ul id="event-list">
+            </ul>
+        </section>
+        <section id="register" class="register">
+            <h2>Register for an Event</h2>
+            <form id="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event-select">Event:</label>
+                <select id="event-select" name="event" required>
+                </select>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, please contact us at <a href="mailto:events@college.edu">sathyabama@college.edu</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 College Events. All rights reserved.</p>
+    </footer>
+</body>
+</html>
